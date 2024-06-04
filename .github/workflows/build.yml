@@ -1,11 +1,11 @@
-name: Build Atomic-Blueberry
+name: Build AtomicBlueberry
 on:
   schedule:
-    - cron:
-        "00 17 * * *" # build at 17:00 UTC every day
-        # (20 minutes after last ublue images start building)
+    # build twice a week (20 minutes after last ublue images start building)
+    - cron: "00 17 * * 2" # build at 17:00 UTC every Tuesday
+    - cron: "00 17 * * 4" # build at 17:00 UTC every Thursday
   push:
-    paths-ignore: # don't rebuild if only documentation has changed
+    paths-ignore:
       - "**.md"
       - "resources/**"
 
