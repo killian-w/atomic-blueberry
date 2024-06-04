@@ -10,6 +10,9 @@
 
 ## Installation Options
 
+> [!IMPORTANT]  
+> AMD and Intel users should use `ghcr.io/krosseye/atomic-blueberry`, and Nvidia users should use `ghcr.io/krosseye/atomic-blueberry-nvidia`
+
 ### Rebase
 
 > [!WARNING]  
@@ -40,9 +43,6 @@ To rebase an existing atomic Fedora installation to the latest build of Atomic B
   ```bash
   systemctl reboot
   ```
-
-> [!IMPORTANT]  
-The `latest` tag will automatically point to the latest build.
 
 ### ISO
 
