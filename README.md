@@ -4,6 +4,9 @@
 
 [![build-atomic-blueberry](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml/badge.svg)](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml)
 
+> [!WARNING]  
+>Atomic Blueberry is in an experimental phase, **everything** is subject to change. **It is not intended for everday use.**
+
 ## About
 
  Atomic Blueberry is an OCI image that is optimized for both battlestations and workstations, built from 'ublue-os/kinoite-main' using Fedora Atomic technology.
