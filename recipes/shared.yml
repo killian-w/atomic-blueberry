@@ -5,6 +5,9 @@ modules:
     base: main
     install:
       - v4l2loopback
+      - evdi
+      - xpadneo
+      - xone
 
   - type: files
     files:
