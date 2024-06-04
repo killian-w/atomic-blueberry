@@ -1,38 +1,55 @@
-# atomic-blueberry &nbsp; [![build-ublue](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml/badge.svg)](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml)
+<p align="center">
+  <img src="./resources/banner.png" alt="Atomic Blueberry"/>
+</p>
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![build-atomic-blueberry](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml/badge.svg)](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml)
 
-After setup, it is recommended you update this README to describe your custom image.
+## About
 
-## Installation
+ Atomic Blueberry is an OCI image that is optimized for both battlestations and workstations, built from 'ublue-os/kinoite-main' using Fedora Atomic technology.
 
-> **Warning**  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## Installation Options
 
-To rebase an existing atomic Fedora installation to the latest build:
+### Rebase
+
+> [!WARNING]  
+> **[This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.**
+
+To rebase an existing atomic Fedora installation to the latest build of Atomic Blueberry:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
+
+  ```bash
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/krosseye/atomic-blueberry:latest
   ```
+
 - Reboot to complete the rebase:
-  ```
+
+  ```bash
   systemctl reboot
   ```
+
 - Then rebase to the signed image, like so:
-  ```
+
+  ```bash
   rpm-ostree rebase ostree-image-signed:docker://ghcr.io/krosseye/atomic-blueberry:latest
   ```
+
 - Reboot again to complete the installation
-  ```
+
+  ```bash
   systemctl reboot
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+> [!IMPORTANT]  
+The `latest` tag will automatically point to the latest build.
 
-## ISO
+### ISO
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+> [!IMPORTANT]  
+> **Pre-built ISOs are currently not available, this is planned for the future.**
+
+If built on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso).
 
 ## Verification
 
