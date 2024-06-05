@@ -6,8 +6,6 @@ modules:
     install:
       - v4l2loopback
       - evdi
-      - xpadneo
-      - xone
 
   - type: files
     files:
@@ -22,7 +20,6 @@ modules:
     install:
       # System
       - tailscale
-      - steam-devices
       - python3-tkinter
       - freetype
       - ibus-typing-booster
@@ -64,14 +61,6 @@ modules:
         - org.freedesktop.Platform.VulkanLayer.OBSVkCapture
         - com.obsproject.Studio.Plugin.OBSVkCapture
 
-        # Gaming
-        - com.valvesoftware.Steam
-        - com.valvesoftware.Steam.CompatibilityTool.Proton-GE
-        - org.freedesktop.Platform.VulkanLayer.vkBasalt
-        - net.davidotek.pupgui2
-        - com.heroicgameslauncher.hgl
-        - com.github.Matoking.protontricks
-
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
@@ -79,6 +68,8 @@ modules:
       # Installing different branches of the same Flatpak is not supported.
       remove:
       # - org.gnome.eog
+
+  - from-file: /shared/gaming.yml
 
   - type: fonts
     fonts:

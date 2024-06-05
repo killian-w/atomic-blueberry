@@ -1,8 +1,8 @@
 name: atomic-blueberry-nvidia
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-description: An image optimized for both battlestations and workstations.
+description: An image optimized for both battlestations and workstations, with Nvidia drivers built in.
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 modules:
-  - from-file: shared.yml
+  - from-file: /shared/shared.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
