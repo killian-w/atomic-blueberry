@@ -69,7 +69,7 @@ modules:
       remove:
       # - org.gnome.eog
 
-  - from-file: /shared/gaming.yml
+  - from-file: ./gaming.yml
 
   - type: fonts
     fonts:
