@@ -18,6 +18,8 @@ modules:
       install:
         # Software
         - com.visualstudio.code
+        - io.github.dvlv.boxbuddyrs
+        - flathub org.gnome.Boxes
 
   - type: fonts
     fonts:

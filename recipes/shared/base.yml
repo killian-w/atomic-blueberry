@@ -48,6 +48,8 @@ modules:
         - org.chromium.Chromium
         - org.chromium.Chromium.Codecs
         - com.usebottles.bottles
+        - org.kde.kdenlive
+        - io.github.celluloid_player.Celluloid
 
         # OBS
         - com.obsproject.Studio
