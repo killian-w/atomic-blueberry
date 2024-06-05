@@ -5,11 +5,17 @@ on:
     - cron: "00 17 * * 2" # build at 17:00 UTC every Tuesday
     - cron: "00 17 * * 4" # build at 17:00 UTC every Thursday
   push:
+    branches:
+      - main
     paths-ignore:
       - "**.md"
       - "resources/**"
-
   pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - "**.md"
+      - "resources/**"
   workflow_dispatch: # allow manually triggering builds
 jobs:
   bluebuild:
