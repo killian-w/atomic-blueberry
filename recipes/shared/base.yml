@@ -25,12 +25,6 @@ modules:
       - ibus-typing-booster
       - mesa-libGLU
       - libadwaita
-
-      # Development
-      - distrobox
-      - git
-      - gh
-      - git-lfs
       - fastfetch
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -51,7 +45,6 @@ modules:
         - org.kde.okular
         - org.onlyoffice.desktopeditors
         - io.github.nyre221.kiview
-        - com.visualstudio.code
         - org.chromium.Chromium
         - org.chromium.Chromium.Codecs
         - com.usebottles.bottles
@@ -70,12 +63,7 @@ modules:
       # - org.gnome.eog
 
   - from-file: ./shared/gaming.yml
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - FiraCode
-        - NerdFontsSymbolsOnly
+  - from-file: ./shared/development.yml
 
   - type: script
     snippets:
