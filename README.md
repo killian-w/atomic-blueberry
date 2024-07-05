@@ -3,9 +3,9 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/your-username/your-repo/actions/workflows/build-amd-intel.yml/badge.svg" alt="Build Atomic Blueberry AMD-Intel"/>
+  <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml/badge.svg" alt="Build Atomic Blueberry AMD-Intel"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/your-username/your-repo/actions/workflows/build-nvidia.yml/badge.svg" alt="Build Atomic Blueberry NVIDIA"/>
+  <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml/badge.svg" alt="Build Atomic Blueberry NVIDIA"/>
 </div>
 
 ## About
