@@ -1,69 +1,57 @@
 <div align="center">
-  <img src="./resources/banner.png" alt="Atomic Blueberry"/>
-</div>
 
-<div align="center">
-  <a href="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml">
-    <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml/badge.svg" alt="Build for AMD/Intel"/>
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml">
-    <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml/badge.svg" alt="Build for NVIDIA"/>
-  </a>
-</div>
+<img src="./resources/banner.png" alt="Atomic Blueberry"/>
 
-## About
+[![Build for AMD/Intel](https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml/badge.svg)](https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml)
+&nbsp;
+[![Build for NVIDIA](https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml/badge.svg)](https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml)
+
+</div>  
+
+## Introduction
 
 > [!WARNING]  
 >Atomic Blueberry is in an experimental phase, **everything** is subject to change. **It is not intended for everday use.**
 
-Atomic Blueberry is an [OCI](https://en.wikipedia.org/wiki/Open_Container_Initiative) image that is optimized for both battlestations and workstations, built from [Universal Blue](https://universal-blue.org/) using [native container](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) workflows powered by [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) technology.
+**Atomic Blueberry** is an experimental [OCI](https://en.wikipedia.org/wiki/Open_Container_Initiative) image designed for high-performance computing environments, including gaming PCs and professional workstations. It leverages the capabilities of [Universal Blue](https://universal-blue.org/) and [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) technologies with the [BlueBuild](https://blue-build.org/) framework to provide a cutting-edge, [containerized operating system](https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) experience.
 
-Atomic Blueberry follows a hybrid release model. This means there's always a single, current version. When the underlying Fedora Kinoite releases a major update, Atomic Blueberry receives it too, after ensuring no regressions. With bi-weekly system updates and [Flatpak](https://flathub.org/) usage, packages are always kept up-to-date.
+## Key Features
 
-### Features
+- **Regular Updates**
+- **Optimized Performance**
+- **Extensive Software Support**
 
-- **[v4l2loopback](https://github.com/umlaeute/v4l2loopback):** allows you to create "virtual video devices"
+## Included Drivers and Utilities
 
-- **[evdi](https://github.com/DisplayLink/evdi):** kernel module required for use of displaylink
+- **[v4l2loopback](https://github.com/umlaeute/v4l2loopback):** For creating virtual video devices.
 
-- **[xpadneo](https://github.com/atar-axis/xpadneo):** xbox one controller bluetooth driver
+- **[evdi](https://github.com/DisplayLink/evdi):** Essential for DisplayLink functionality.
 
-- **[xone](https://github.com/BoukeHaarsma23/xonedo/):** xbox one controller USB wired/RF driver modified to work along-side xpad
+- **[xpadneo](https://github.com/atar-axis/xpadneo) & [xone](https://github.com/BoukeHaarsma23/xonedo/):** Advanced Xbox One controller support via Bluetooth and USB.
 
-- **[steam-devices](https://github.com/ValveSoftware/steam-devices):** udev rules for various Steam-related hardware devices
+- **[steam-devices](https://github.com/ValveSoftware/steam-devices):** Udev rules for Steam hardware peripherals.
 
-- **[ibus-typing-booster](https://mike-fabian.github.io/ibus-typing-booster/):** a completion input method to speedup typing
+- **[ibus-typing-booster](https://mike-fabian.github.io/ibus-typing-booster/):** Enhances typing efficiency with intelligent predictions.
 
-### Applications
+## Pre-installed Applications
 
-- **[OBS Studio](https://flathub.org/apps/com.obsproject.Studio):** for video capturing, recording, and live streaming
+### Productivity
 
-- **[Bottles](https://flathub.org/apps/com.usebottles.bottles):** run Windows software on Linux
+- **[OBS Studio](https://flathub.org/apps/com.obsproject.Studio):** Powerful tool for video capture, recording, and streaming.
+- **[ONLYOFFICE](https://flathub.org/apps/org.onlyoffice.desktopeditors):** Comprehensive suite for document creation and editing.
+- **[Kdenlive](https://flathub.org/apps/org.kde.kdenlive):** Video editing application with advanced editing features.
+- **[Bottles](https://flathub.org/apps/com.usebottles.bottles):** Run Windows software on Linux.
 
-- **[ONLYOFFICE](https://flathub.org/apps/org.onlyoffice.desktopeditors):** create, view and edit text documents, spreadsheets and presentations
+### Development
 
-- **[Kdenlive](https://flathub.org/apps/org.kde.kdenlive):** video editing application with support for many audio and video formats and advanced editing features
+- **[Visual Studio Code](https://flathub.org/apps/com.visualstudio.code):** Versatile code editor for multiple programming languages.
+- **[Distrobox](https://distrobox.it/) & [BoxBuddy](https://flathub.org/apps/io.github.dvlv.boxbuddyrs):** Enables running any Linux distribution within your terminal and provides a GUI for management.
+- **[Boxes](https://flathub.org/apps/org.gnome.Boxes):** Simplifies virtual machine setup and management.
 
-- **Development:**
+### Gaming
 
-  - **[VS Code](https://flathub.org/apps/com.visualstudio.code):** a lightweight but powerful source code editor
-
-  - **[Distrobox](https://distrobox.it/):** use any Linux distribution inside your terminal
-
-  - **[BoxBuddy](https://flathub.org/apps/io.github.dvlv.boxbuddyrs):** a graphical user interface for Distrobox
-
-  - **[Boxes](https://flathub.org/apps/org.gnome.Boxes):**  select an operating system and let Boxes download and install it for you in a virtual machine
-
-- **Gaming:**
-
-  - **[Steam](https://flathub.org/apps/com.valvesoftware.Steam):** launcher for the Steam software distribution service
-
-  - **[ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2):** install Wine and Proton based compatibility tools
-
-  - **[Protontricks](https://flathub.org/apps/com.github.Matoking.protontricks):** run Winetricks commands for Steam Play/Proton games among other common Wine features
-
-  - **[Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl):** Epic Games, GOG and Amazon Prime games launcher
+- **[Steam](https://flathub.org/apps/com.valvesoftware.Steam) & [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl):** Access to thousands of games with compatibility layer support for Windows titles.
+- **[ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2) & [Protontricks](https://flathub.org/apps/com.github.Matoking.protontricks):** Additional tools for enhancing the gaming experience across various platforms.
 
 ## Installation Options
 
@@ -77,29 +65,19 @@ Atomic Blueberry follows a hybrid release model. This means there's always a sin
 
 To rebase an existing atomic Fedora installation to the latest build of Atomic Blueberry:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+1. Install the unsigned image to update keys and policies:
 
-  ```bash
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/krosseye/atomic-blueberry:latest
-  ```
+```bash
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/krosseye/atomic-blueberry:latest
+systemctl reboot
+```
 
-- Reboot to complete the rebase:
+2. Complete the rebase with the signed image:
 
-  ```bash
-  systemctl reboot
-  ```
-
-- Then rebase to the signed image, like so:
-
-  ```bash
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/krosseye/atomic-blueberry:latest
-  ```
-
-- Reboot again to complete the installation
-
-  ```bash
-  systemctl reboot
-  ```
+```bash
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/krosseye/atomic-blueberry:latest
+systemctl reboot
+```
 
 ### ISO
 
