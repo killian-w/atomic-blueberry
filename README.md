@@ -1,8 +1,12 @@
-<p align="center">
+<div align="center">
   <img src="./resources/banner.png" alt="Atomic Blueberry"/>
-</p>
+</div>
 
-[![build-atomic-blueberry](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml/badge.svg)](https://github.com/krosseye/atomic-blueberry/actions/workflows/build.yml)
+<div align="center">
+  <img src="https://github.com/your-username/your-repo/actions/workflows/build-amd-intel.yml/badge.svg" alt="Build Atomic Blueberry AMD-Intel"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/your-username/your-repo/actions/workflows/build-nvidia.yml/badge.svg" alt="Build Atomic Blueberry NVIDIA"/>
+</div>
 
 ## About
 
