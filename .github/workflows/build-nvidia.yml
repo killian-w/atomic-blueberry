@@ -1,4 +1,4 @@
-name: Build Atomic Blueberry NVIDIA
+name: Build for NVIDIA
 on:
   schedule:
     # build twice a week (20 minutes after last ublue images start building)

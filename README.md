@@ -3,9 +3,13 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml/badge.svg" alt="Build Atomic Blueberry AMD-Intel"/>
+  <a href="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml">
+    <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-amd-intel.yml/badge.svg" alt="Build for AMD/Intel"/>
+  </a>
   &nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml/badge.svg" alt="Build Atomic Blueberry NVIDIA"/>
+  <a href="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml">
+    <img src="https://github.com/Krosseye/atomic-blueberry/actions/workflows/build-nvidia.yml/badge.svg" alt="Build for NVIDIA"/>
+  </a>
 </div>
 
 ## About
