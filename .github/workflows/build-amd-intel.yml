@@ -18,6 +18,10 @@ on:
       - ".editorconfig"
       - "resources/**"
   workflow_dispatch: # allow manually triggering builds
+concurrency:
+  # only run one build at a time
+  group: ${{ github.ref || github.run_id }}
+  cancel-in-progress: true
 jobs:
   bluebuild:
     name: Build Custom Image AMD-Intel
@@ -35,3 +39,5 @@ jobs:
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
+
+          maximize_build_space: true
